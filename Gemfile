@@ -45,13 +45,10 @@ group :development, :test do
 
 end
 
-group :production do
-
   gem 'cat_api', '~>0.1.0'
 
   gem 'rails_12factor'
 
   gem 'pg', group: :production
 
-end
 
