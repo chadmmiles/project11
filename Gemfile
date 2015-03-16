@@ -47,7 +47,7 @@ end
 
   gem 'cat_api', '~>0.1.0'
 
-  gem 'rails_12factor'
+  gem 'rails_12factor', group: :production
 
   gem 'pg', group: :production
 
