@@ -51,8 +51,7 @@ group :production do
 
   gem 'rails_12factor'
 
-  gem 'pg'
+  gem 'pg', group: :production
 
-  
 end
 
