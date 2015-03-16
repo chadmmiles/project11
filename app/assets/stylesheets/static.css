@@ -1,0 +1,13 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #f7f7f7;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline;
+	padding-right: 10px;
+}

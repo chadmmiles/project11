@@ -1,0 +1,4 @@
+<h1>This page contains <%= cat_number %> cat(s)!!</h1>
+<% @cats.each do |cat| %>
+	<img src="<%= cat.url %>" alt="Cat pic">
+<% end %>
