@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :listings
+
   root 'static#home'
   get '/about' => 'static#about'
 

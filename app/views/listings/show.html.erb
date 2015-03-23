@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @listing.address %>
+</p>
+
+<p>
+  <strong>Square footage:</strong>
+  <%= @listing.square_footage %>
+</p>
+
+<p>
+  <strong>Beds:</strong>
+  <%= @listing.beds %>
+</p>
+
+<p>
+  <strong>Bathrooms:</strong>
+  <%= @listing.bathrooms %>
+</p>
+
+<p>
+  <strong>Date on market:</strong>
+  <%= @listing.date_on_market %>
+</p>
+
+<p>
+  <strong>For sale by owner:</strong>
+  <%= @listing.for_sale_by_owner %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>
