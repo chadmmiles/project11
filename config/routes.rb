@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+
   resources :listings
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get '/sign-in' => 'sessions#new'
+  delete '/sign-out' => 'sessions#destroy'
 
   root 'static#home'
   get '/about' => 'static#about'

@@ -1,4 +1,5 @@
 class StaticController < ApplicationController
+  before_action :only_allow_signed_in_users, except: [:index, :show]
   def home
   end
 

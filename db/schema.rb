@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150323160608) do
+ActiveRecord::Schema.define(version: 20150330144014) do
 
   create_table "listings", force: :cascade do |t|
     t.text     "address"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 20150323160608) do
     t.boolean  "for_sale_by_owner"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
