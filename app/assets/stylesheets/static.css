@@ -7,7 +7,7 @@ ul {
 	list-style: none;
 }
 
-li {
+#nav li {
 	display: inline;
 	padding-right: 10px;
 }
